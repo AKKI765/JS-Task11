@@ -1,0 +1,48 @@
+
+body{
+    background:
+        linear-gradient(rgb(188, 61, 61), transparent),
+        linear-gradient(to top left, rgb(169, 130, 13), transparent),
+        linear-gradient(to top right, rgb(137, 137, 188), transparent);
+    background-blend-mode: screen;
+}
+
+h1{
+    padding-left:600px ;
+}
+
+
+.reg{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+table, th, td {
+    border: none;
+    border-collapse: collapse;
+  }
+
+.error {
+    color: red;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top: 5px;
+}
+
+.btn{
+    margin-left: 600px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: brown;
+}
+
+.btn:hover{
+    background-color: red;
+    cursor: pointer;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration form</title>
+</head>
+<body>
+
+    <h1 style="color:blue">Registration Form</h1>
+    <form id="registrationForm" onsubmit="return validateForm()">
+    
+        <table class="reg">
+    
+        <tr>
+            <td><label for="firstname">First Name:</label></td>
+            <td><input type="text" id="firstname" name="firstname"></td>
+            <td><span id="firstnameError" class="error"></span></td>
+        </tr>
+
+        <tr>
+            <td><label for="lastname">Last Name:</label></td>
+            <td><input type="text" id="lastname" name="lastname"></td>
+            <td><span id="lastnameError" class="error"></span></td>
+            
+        </tr>
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email"></td>
+            <td><span id="emailError" class="error"></span></td>
+            
+        </tr>
+
+        <tr>
+            <td><label for="password">Password:</label></td>
+            <td><input type="password" id="password" name="password" ></td>
+            <td><span id="passwordError" class="error"></span></td>
+            
+        </tr>
+
+        <tr>
+            <td><label for="repassword">Re Password:</label></td>
+            <td><input type="password" id="repassword" name="repassword"></td>
+            <td><span id="repasswordError" class="error"></span></td>
+            
+        </tr>
+
+        <tr>
+            <td rowspan="2"><label for="gender">Gender:</label></td>
+            <td><input type="radio" id="gender" name="gender" checked>Male</td>
+            <td><span id="genderError" class="error"></span></td>
+        </tr>
+          <tr>
+            <td><input type="radio">Female</td>
+        </tr>
+          
+
+        <tr>
+            <td><label for="phone">Phone:</label></td>
+            <td><input type="text" id="phone" name="phone" placeholder="+91 XXXXXXXXXX"></td>
+            <td><span id="phoneError" class="error"></span></td>
+            
+        </tr>
+
+        <tr>
+            <td><label for="address">Address:</label></td>
+            <td><textarea name="address" id="address" cols="30" rows="10"></textarea></td>
+            <td><span id="addressError" class="error"></span></td>
+            
+        </tr>
+
+        <tr>
+            <td><label for="state">State:</label></td>
+            <td><input type="text" id="state" name="state"></td>
+            <td> <span id="stateError" class="error"></span></td>
+           
+        </tr>
+        
+
+        <tr>
+            <td><label for="country">Country:</label></td>
+            <td><select id="country" name="country">
+                <option value="">Select Your Country</option>
+                <option value="Indis">India</option>
+                <option value="USA">Usa</option>
+                <option value="Aus">Austria</option>
+                <option value="UK">UK</option>
+                <option value="France">France</option>
+                <option value="Russia">Russia</option>
+            </select></td>
+            <td><span id="countryError" class="error"></span></td>
+            
+        </tr>
+       
+        <tr>
+            <td><label for="language">Language:</label></td>
+            <td  id="language" name="language">
+                <input type="checkbox" >Hindi
+                <input type="checkbox" >English
+                <input type="checkbox" >Kannada
+                <input type="checkbox" >Telugu
+                
+            </td>
+            <td> <span id="languageError" class="error"></span></td>
+           
+        </tr>
+    
+
+    <tr>
+        <th rowspan="1">
+            <input type="checkbox" required/> Hereby I declare all the details are true.
+        </th>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td style="float: right;">
+            Log in to <a href="https://ethnus.com/">Ethnus</a> Website
+        </td>
+    </tr>
+
+    </table><br>
+
+    <button class="btn" value="Register">Register</button>
+
+</form>
+
+
+
+<script src="script.js"></script>
+    
+</body>
+</html>
